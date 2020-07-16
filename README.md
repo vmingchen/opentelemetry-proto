@@ -8,16 +8,16 @@ See [contribution guidelines](CONTRIBUTING.md) if you would like to make any cha
 
 ## Maturity Level
 
-Component                 | Maturity |
-------------------------- |----------|
-collector/metrics/*       | Alpha    |
-collector/trace/*         | Stable   |
-collector/dynamicconfig/* | Alpha    |
-common/*                  | Beta     |
-metrics/*                 | Alpha    |
-resource/*                | Beta     |
-trace/trace.proto         | Stable   |
-trace/trace_config.proto  | Alpha    |
+Component                 | Maturity  |
+------------------------- |-----------|
+collector/metrics/*       | Alpha     |
+collector/trace/*         | Stable    |
+common/*                  | Beta      |
+experimental/*            | Pre-Alpha |
+metrics/*                 | Alpha     |
+resource/*                | Beta      |
+trace/trace.proto         | Stable    |
+trace/trace_config.proto  | Alpha     |
 
 (See [maturity-matrix.yaml](https://github.com/open-telemetry/community/blob/47813530864b9fe5a5146f466a58bd2bb94edc72/maturity-matrix.yaml#L57)
 for definition of maturity levels).
