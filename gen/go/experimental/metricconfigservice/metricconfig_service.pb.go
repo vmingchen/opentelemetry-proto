@@ -28,8 +28,8 @@ const _ = proto.ProtoPackageIsVersion3 // please upgrade the proto package
 type MetricConfigRequest struct {
 	// Required. The resource for which configuration should be returned.
 	Resource *v1.Resource `protobuf:"bytes,1,opt,name=resource,proto3" json:"resource,omitempty"`
-	// Optional. The value of ConfigResponse.fingerprint for the last configuration
-	// that the caller received and successfully applied.
+	// Optional. The value of MetricConfigResponse.fingerprint for the last
+	// configuration that the caller received and successfully applied.
 	LastKnownFingerprint []byte   `protobuf:"bytes,2,opt,name=last_known_fingerprint,json=lastKnownFingerprint,proto3" json:"last_known_fingerprint,omitempty"`
 	XXX_NoUnkeyedLiteral struct{} `json:"-"`
 	XXX_unrecognized     []byte   `json:"-"`
@@ -76,11 +76,11 @@ func (m *MetricConfigRequest) GetLastKnownFingerprint() []byte {
 }
 
 type MetricConfigResponse struct {
-	// Optional. The fingerprint associated with this ConfigResponse. Each change
-	// in configs yields a different fingerprint. The resource SHOULD copy this
-	// value to ConfigRequest.last_known_fingerprint for the next configuration
-	// request. If there are no changes between fingerprint and
-	// ConfigRequest.last_known_fingerprint, then all other fields besides
+	// Optional. The fingerprint associated with this MetricConfigResponse. Each
+	// change in configs yields a different fingerprint. The resource SHOULD copy
+	// this value to MetricConfigRequest.last_known_fingerprint for the next
+	// configuration request. If there are no changes between fingerprint and
+	// MetricConfigRequest.last_known_fingerprint, then all other fields besides
 	// fingerprint in the response are optional, or the same as the last update if
 	// present.
 	//
